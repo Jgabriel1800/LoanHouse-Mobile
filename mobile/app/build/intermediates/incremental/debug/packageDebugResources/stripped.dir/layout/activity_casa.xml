@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Figma "Detalhes da casa". Por enquanto só leitura e exclusão; edição na task de 09/11. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:navigationIcon="@drawable/ic_voltar"
+        app:navigationIconTint="@color/azul"
+        app:title="@string/detalhe_titulo"
+        app:titleTextAppearance="@style/Texto.Titulo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/borda" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/conteudoCasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/espaco">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iconeCasa"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_casa" />
+
+                <TextView
+                    android:id="@+id/textoCodigo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/texto"
+                    android:textSize="@dimen/texto_codigo"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/badgeSituacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="6dp"
+                    android:textSize="@dimen/texto_base"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Texto.Corpo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/detalhe_subtitulo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/botaoEditar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/detalhe_editar"
+                    app:icon="@drawable/ic_editar" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/botaoExcluir"
+                    style="@style/Botao.Contorno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:text="@string/detalhe_excluir"
+                    android:textColor="@color/vermelho"
+                    app:icon="@drawable/ic_excluir"
+                    app:iconTint="@color/vermelho"
+                    app:strokeColor="@color/vermelho_borda" />
+            </LinearLayout>
+
+            <!-- Pendências da casa (só aparece se houver) -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/grupoBadges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                app:cardBackgroundColor="@color/fundo"
+                app:cardCornerRadius="@dimen/raio"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/borda"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:id="@+id/listaCampos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/espaco">
+
+                    <TextView
+                        style="@style/Texto.Titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/detalhe_dados" />
+
+                    <!-- Os campos (Rua, Número, Bairro, CEP, Valor) são adicionados pela CasaActivity -->
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/textoCidade"
+                style="@style/Texto.Corpo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

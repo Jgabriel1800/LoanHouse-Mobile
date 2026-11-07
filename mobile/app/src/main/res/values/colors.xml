@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paleta do protótipo no Figma (LoanHouse). Cores fortes só para status. -->
+<resources>
+    <color name="fundo">#FFFFFF</color>
+    <color name="azul">#155A92</color>
+    <color name="azul_claro">#EEF4FA</color>
+    <color name="texto">#1F2933</color>
+    <color name="texto_suave">#52606D</color>
+    <color name="borda">#D9E1E8</color>
+    <color name="branco">#FFFFFF</color>
+
+    <color name="verde">#2E7D32</color>
+    <color name="verde_fundo">#E8F5EC</color>
+    <color name="vermelho">#C62828</color>
+    <color name="vermelho_fundo">#FDEEEE</color>
+    <color name="vermelho_borda">#E57373</color>
+    <color name="cinza">#5F6B7A</color>
+    <color name="cinza_fundo">#EEF1F4</color>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Figma: card central com logo, "Acesse sua conta", campos e botão "Entrar no Sistema". Login só por e-mail. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/espaco">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/fundo"
+            app:cardCornerRadius="@dimen/raio"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/borda"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/espaco_grande">
+
+                <include layout="@layout/view_logo" />
+
+                <TextView
+                    style="@style/Texto.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/login_subtitulo" />
+
+                <TextView
+                    style="@style/Texto.Titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/login_titulo" />
+
+                <TextView
+                    style="@style/Texto.Rotulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/login_email" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/campoEmail"
+                    style="@style/Campo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:endIconDrawable="@drawable/ic_pessoa"
+                    app:endIconMode="custom"
+                    app:endIconTint="@color/azul">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="emailAddress"
+                        android:hint="@string/login_email_dica"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:minHeight="@dimen/botao_altura"
+                        android:textSize="@dimen/texto_base" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/Texto.Rotulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/login_senha" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/campoSenha"
+                    style="@style/Campo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/azul">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputSenha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="password"
+                        android:hint="@string/login_senha_dica"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:minHeight="@dimen/botao_altura"
+                        android:textSize="@dimen/texto_base" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textoErro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/vermelho"
+                    android:textSize="@dimen/texto_base"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/botaoEntrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/espaco_grande"
+                    android:text="@string/login_entrar"
+                    app:icon="@drawable/ic_entrar" />
+
+                <ProgressBar
+                    android:id="@+id/progresso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/espaco"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Só aparece na versão de teste (debug): confirma que o google-services.json foi lido. -->
+        <TextView
+            android:id="@+id/textoStatusFirebase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:textColor="@color/verde"
+            android:textSize="@dimen/texto_pequeno"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

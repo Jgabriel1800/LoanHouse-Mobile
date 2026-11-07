@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="texto_pequeno">15sp</dimen>
+    <dimen name="texto_base">17sp</dimen>
+    <dimen name="texto_grande">20sp</dimen>
+    <dimen name="texto_titulo">24sp</dimen>
+    <dimen name="texto_codigo">26sp</dimen>
+    <dimen name="botao_altura">56dp</dimen>
+    <dimen name="espaco">16dp</dimen>
+    <dimen name="espaco_grande">24dp</dimen>
+    <dimen name="raio">12dp</dimen>
+    <dimen name="raio_botao">8dp</dimen>
+</resources>

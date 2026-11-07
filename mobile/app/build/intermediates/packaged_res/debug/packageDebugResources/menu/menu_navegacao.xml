@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home" android:icon="@drawable/ic_home" android:title="@string/nav_home" />
+    <item android:id="@+id/nav_casas" android:icon="@drawable/ic_casa" android:title="@string/nav_casas" />
+    <item android:id="@+id/nav_inquilinos" android:icon="@drawable/ic_inquilinos" android:title="@string/nav_inquilinos" />
+    <item android:id="@+id/nav_calendario" android:icon="@drawable/ic_calendario" android:title="@string/nav_calendario" />
+    <item android:id="@+id/nav_recursos" android:icon="@drawable/ic_recursos" android:title="@string/nav_recursos" />
+</menu>

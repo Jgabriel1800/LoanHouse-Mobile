@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-mergeDebugResources-45:/layout/view_logo.xml",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/view_logo.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-mergeDebugResources-45:/layout/activity_main.xml",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-mergeDebugResources-45:/layout/activity_relatorios.xml",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/activity_relatorios.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-mergeDebugResources-45:/layout/activity_casa.xml",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/activity_casa.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-mergeDebugResources-45:/layout/view_cabecalho.xml",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/view_cabecalho.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-mergeDebugResources-45:/layout/activity_login.xml",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/activity_login.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-mergeDebugResources-45:/layout/item_casa.xml",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/item_casa.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-mergeDebugResources-45:/layout/fragment_casas.xml",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/fragment_casas.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-mergeDebugResources-45:/layout/fragment_home.xml",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-mergeDebugResources-45:/layout/item_campo.xml",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/item_campo.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-mergeDebugResources-45:/layout/fragment_em_breve.xml",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/fragment_em_breve.xml"
+    }
+]

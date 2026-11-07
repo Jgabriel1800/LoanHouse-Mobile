@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LoanHouse</string>
+
+    <!-- Login -->
+    <string name="login_subtitulo">Gerenciamento de Aluguéis de Imóveis</string>
+    <string name="login_titulo">Acesse sua conta</string>
+    <string name="login_email">E-mail</string>
+    <string name="login_email_dica">Digite seu e-mail</string>
+    <string name="login_senha">Senha</string>
+    <string name="login_senha_dica">Digite sua senha</string>
+    <string name="login_entrar">Entrar no Sistema</string>
+    <string name="login_status_firebase">Conectado ao Firebase: %1$s</string>
+    <string name="erro_campos_vazios">Preencha o e-mail e a senha.</string>
+    <string name="erro_credenciais">E-mail ou senha incorretos.</string>
+    <string name="erro_muitas_tentativas">Muitas tentativas. Espere alguns minutos e tente de novo.</string>
+    <string name="erro_sem_internet">Sem conexão com a internet.</string>
+    <string name="erro_generico">Não foi possível entrar. Tente de novo.</string>
+
+    <!-- Navegação -->
+    <string name="nav_home">Home</string>
+    <string name="nav_casas">Casas</string>
+    <string name="nav_inquilinos">Inquilinos</string>
+    <string name="nav_calendario">Calendário</string>
+    <string name="nav_recursos">Recursos</string>
+
+    <!-- Home -->
+    <string name="home_relatorios">Relatórios</string>
+    <string name="home_logout">Logout</string>
+    <string name="home_titulo">Casas com pendência (%1$d)</string>
+    <string name="home_alerta_uma">1 imóvel com pendência • %1$s</string>
+    <string name="home_alerta_varias">%1$d imóveis com pendências • %2$s</string>
+    <string name="home_cobrar">Cobrar via WhatsApp</string>
+    <string name="home_tudo_em_dia">Tudo em dia!</string>
+    <string name="home_tudo_em_dia_detalhe">Nenhum imóvel tem pendência de aluguel, água, luz ou IPTU. As casas em dia e as vagas ficam na aba Casas.</string>
+    <string name="home_criar_exemplos">Criar casas de exemplo</string>
+    <string name="home_exemplos_criados">Casas de exemplo criadas.</string>
+    <string name="mensagem_cobranca">Olá, %1$s, tudo bem? Passando pra lembrar do aluguel da casa %2$s.</string>
+    <string name="sem_whatsapp">Não foi possível abrir o WhatsApp.</string>
+
+    <!-- Casas -->
+    <string name="casas_titulo">Seus imóveis (%1$d casas)</string>
+    <string name="casas_resumo">%1$d com pendência • %2$d em dia • %3$d vagas</string>
+    <string name="casas_cadastrar">Cadastrar Casa</string>
+    <string name="casas_vazio">Nenhuma casa cadastrada ainda.</string>
+    <string name="casas_sem_permissao">Sua conta ainda não tem acesso aos dados. Peça para criarem o seu documento em usuarios/ no Firestore.</string>
+    <string name="casas_erro">Não foi possível carregar as casas.</string>
+    <string name="casa_endereco">%1$s, %2$s</string>
+    <string name="casa_bairro">%1$s • %2$s/%3$s</string>
+    <string name="casa_ver_detalhes">Ver detalhes</string>
+
+    <!-- Situação e pendências (mesmos textos do site) -->
+    <string name="badge_pendencia">Com Pendência</string>
+    <string name="badge_atrasada">Atrasada</string>
+    <string name="badge_alugada">Alugada</string>
+    <string name="badge_vaga">Vaga</string>
+    <string name="pendencia_aluguel">Aluguel Não Pago</string>
+    <string name="pendencia_agua">Água Pendente</string>
+    <string name="pendencia_luz">Luz Pendente</string>
+    <string name="pendencia_iptu">IPTU Pendente</string>
+    <string name="pagamento_em_dia">Aluguel Pago</string>
+    <string name="sem_pendencias">Sem Pendências</string>
+
+    <!-- Detalhe da casa -->
+    <string name="detalhe_titulo">Detalhes da casa</string>
+    <string name="detalhe_subtitulo">Detalhes e edição da casa</string>
+    <string name="detalhe_editar">Editar</string>
+    <string name="detalhe_excluir">Excluir</string>
+    <string name="detalhe_dados">Dados do imóvel</string>
+    <string name="detalhe_pendencias">Pendências</string>
+    <string name="campo_rua">Rua</string>
+    <string name="campo_numero">Número</string>
+    <string name="campo_bairro">Bairro</string>
+    <string name="campo_cep">CEP</string>
+    <string name="campo_valor">Valor do aluguel</string>
+    <string name="excluir_titulo">Excluir a casa %1$s?</string>
+    <string name="excluir_mensagem">Essa ação não pode ser desfeita.</string>
+    <string name="excluir_confirmar">Excluir</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="casa_nao_encontrada">Casa não encontrada.</string>
+
+    <!-- Telas que chegam nas próximas tasks -->
+    <string name="em_breve_inquilinos">A lista e a ficha dos inquilinos chegam na task de 16/11.</string>
+    <string name="em_breve_calendario">O calendário e a sincronização com o Google Agenda chegam na task de 23/11.</string>
+    <string name="em_breve_recursos">Parceiros e Estoque chegam na task de 26/11.</string>
+    <string name="em_breve_relatorios">O relatório mensal em PDF chega na task de 30/11.</string>
+    <string name="em_breve_cadastro">O cadastro e a edição de casas chegam na task de 09/11.</string>
+    <string name="relatorios_titulo">Relatórios mensais</string>
+</resources>

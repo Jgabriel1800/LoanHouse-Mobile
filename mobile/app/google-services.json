@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "380047214558",
+    "project_id": "leanhouse",
+    "storage_bucket": "leanhouse.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380047214558:android:20d50a6117f8481a70bf4f",
+        "android_client_info": {
+          "package_name": "br.edu.ifpe.loanhouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf4uHaNtkg7Lgp_djT4bALhttkmMFlobY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

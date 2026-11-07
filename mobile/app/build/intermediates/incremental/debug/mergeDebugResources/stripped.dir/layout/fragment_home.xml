@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home (dashboard): SÓ as casas com pendência. As em dia e as vagas ficam na aba Casas. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/cabecalho"
+        layout="@layout/view_cabecalho" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/espaco"
+        android:paddingEnd="@dimen/espaco"
+        android:paddingBottom="12dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botaoRelatorios"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:minHeight="@dimen/botao_altura"
+            android:text="@string/home_relatorios"
+            android:textSize="@dimen/texto_base"
+            android:textStyle="bold"
+            app:cornerRadius="28dp"
+            app:icon="@drawable/ic_relatorio"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botaoLogout"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:minHeight="@dimen/botao_altura"
+            android:text="@string/home_logout"
+            android:textColor="@color/texto_suave"
+            android:textSize="@dimen/texto_base"
+            app:icon="@drawable/ic_sair"
+            app:iconGravity="textStart"
+            app:iconTint="@color/texto_suave" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/borda" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/espaco">
+
+            <!-- Alerta vermelho do Figma -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cartaoAlerta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/vermelho_fundo"
+                app:cardCornerRadius="@dimen/raio"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/vermelho_borda"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/espaco">
+
+                    <TextView
+                        android:id="@+id/textoAlerta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/vermelho"
+                        android:textSize="@dimen/texto_base"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_alerta"
+                        app:drawableTint="@color/vermelho" />
+
+                    <TextView
+                        android:id="@+id/textoAlertaDetalhe"
+                        style="@style/Texto.Corpo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/botaoCobrar"
+                        style="@style/Botao.Contorno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/home_cobrar"
+                        app:backgroundTint="@color/fundo"
+                        app:icon="@drawable/ic_whatsapp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/textoTitulo"
+                style="@style/Texto.Titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listaPendentes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <!-- Estado "Tudo em dia" -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cartaoEmDia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/verde_fundo"
+                app:cardCornerRadius="@dimen/raio"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/espaco_grande">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/home_tudo_em_dia"
+                        android:textColor="@color/verde"
+                        android:textSize="@dimen/texto_grande"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_ok"
+                        app:drawableTint="@color/verde" />
+
+                    <TextView
+                        style="@style/Texto.Corpo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/home_tudo_em_dia_detalhe" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/textoMensagem"
+                style="@style/Texto.Corpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/espaco"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progresso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/espaco_grande" />
+
+            <!-- Só na versão de teste (debug), quando o banco está vazio -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/botaoExemplos"
+                style="@style/Botao.Contorno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:text="@string/home_criar_exemplos"
+                android:visibility="gone"
+                app:icon="@drawable/ic_adicionar" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

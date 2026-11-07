@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_casa.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_casa.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_pessoa.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_pessoa.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_adicionar.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_adicionar.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_seta.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_seta.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_entrar.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_entrar.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_ok.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_ok.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/layout_activity_login.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/activity_login.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_recursos.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_recursos.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_inquilinos.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_inquilinos.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/layout_view_logo.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/view_logo.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/layout_item_campo.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/item_campo.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/layout_activity_relatorios.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/activity_relatorios.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/layout_activity_main.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_editar.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_editar.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/layout_activity_casa.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/activity_casa.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/layout_fragment_casas.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/fragment_casas.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/layout_item_casa.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/item_casa.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/layout_fragment_em_breve.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/fragment_em_breve.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_alerta.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_alerta.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/menu_menu_navegacao.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/menu/menu_navegacao.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_sair.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_sair.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_calendario.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_calendario.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/color_nav_item.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/color/nav_item.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_relatorio.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_relatorio.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/layout_fragment_home.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_divisor.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/divisor.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_voltar.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_voltar.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/layout_view_cabecalho.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/layout/view_cabecalho.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_excluir.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_excluir.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_bg_avatar.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/bg_avatar.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_whatsapp.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_whatsapp.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_home.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "br.edu.ifpe.loanhouse.app-debug-46:/drawable_ic_launcher.xml.flat",
+        "source": "br.edu.ifpe.loanhouse.app-main-48:/drawable/ic_launcher.xml"
+    }
+]

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LoanHouse" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/azul</item>
+        <item name="colorOnPrimary">@color/branco</item>
+        <item name="colorPrimaryContainer">@color/azul_claro</item>
+        <item name="colorOnPrimaryContainer">@color/azul</item>
+        <item name="colorSecondaryContainer">@color/azul_claro</item>
+        <item name="colorOnSecondaryContainer">@color/azul</item>
+        <item name="colorSurface">@color/fundo</item>
+        <item name="colorOnSurface">@color/texto</item>
+        <item name="colorOutline">@color/borda</item>
+        <item name="colorError">@color/vermelho</item>
+        <item name="colorControlNormal">@color/texto_suave</item>
+        <item name="android:colorBackground">@color/fundo</item>
+        <item name="android:statusBarColor">@color/fundo</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/fundo</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="materialButtonStyle">@style/Botao.Primario</item>
+    </style>
+
+    <style name="Botao.Primario" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/botao_altura</item>
+        <item name="android:textSize">@dimen/texto_base</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">@dimen/raio_botao</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">12dp</item>
+    </style>
+
+    <style name="Botao.Contorno" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/botao_altura</item>
+        <item name="android:textSize">@dimen/texto_base</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/azul</item>
+        <item name="cornerRadius">@dimen/raio_botao</item>
+        <item name="strokeColor">@color/borda</item>
+        <item name="iconTint">@color/azul</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">12dp</item>
+    </style>
+
+    <style name="Texto.Titulo" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">@dimen/texto_titulo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/texto</item>
+    </style>
+
+    <style name="Texto.Rotulo" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">@dimen/texto_base</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/texto</item>
+    </style>
+
+    <style name="Texto.Corpo" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">@dimen/texto_base</item>
+        <item name="android:textColor">@color/texto_suave</item>
+    </style>
+
+    <style name="Texto.Nav" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Campo" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/raio_botao</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/raio_botao</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/raio_botao</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/raio_botao</item>
+        <item name="boxStrokeColor">@color/azul</item>
+        <item name="hintEnabled">false</item>
+    </style>
+</resources>

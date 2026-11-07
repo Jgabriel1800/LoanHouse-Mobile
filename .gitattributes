@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# gradlew precisa de fim de linha Unix para rodar no GitHub Actions
+mobile/gradlew text eol=lf
+*.bat text eol=crlf
